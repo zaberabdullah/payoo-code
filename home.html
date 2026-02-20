@@ -73,7 +73,7 @@
           <img src="./assets/opt-5.png" alt="" />
           <p>Pay Bill</p>
         </button>
-        <button class="btn flex-col h-full py-4 btn-primary btn-soft">
+        <button onclick="showOnly('history')" class="btn flex-col h-full py-4 btn-primary btn-soft">
           <img src="./assets/opt-6.png" alt="" />
           <p>Transactions</p>
         </button>
@@ -133,7 +133,7 @@
       </div>
     </section>
 
-    <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
+    <section id="cashout" class="w-11/12 mx-auto py-5">
       <h2 class="text-xl font-bold mb-5">Cashout</h2>
       <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
@@ -174,6 +174,13 @@
             <button id="cashout-btn" class="btn btn-primary mt-4 rounded-full">Withdraw Money</button>
           </fieldset>
         </div>
+      </div>
+    </section>
+
+    <section id="history" class="w-11/12 mx-auto py-5 hidden">
+      <h2 class="text-xl font-bold mb-5">Transactions</h2>
+      <div id="history-container" class="space-y-5">
+       
       </div>
     </section>
 

@@ -24,6 +24,19 @@ document.getElementById("add-money-btn")
             ${bankAccount} at 
             ${new Date()}`)
         setBalance(newBalance);
+        // 1. history container ke dhore anbo
+        const history = document.getElementById("history-container")
+        // 2. new div create korbo
+        const newHistory = document.createElement("div");
+        // 3. new div er moddhe innerHTML Add korbo
+        newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-100">
+          Add Money Success from 
+            ${bankAccount}, acc-no ${accno} at ${new Date()}
+        </div>
+        `;
+        // 4. history container a newdiv append korbo
+        history.append(newHistory)
     }else{
         alert("invalid pin");
         return;
